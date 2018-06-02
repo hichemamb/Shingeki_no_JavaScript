@@ -1,0 +1,63 @@
+.erenChockedContainer{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  &-banner{
+    position:absolute;
+    background-color:black;
+    height:75vh;
+    width:20vw;
+    left:10vw;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+  }
+  &-rose{
+    position:absolute;
+    width:166px;
+    height:226px;
+    top:10vh;
+    left:10vw;
+    transform: rotate(-25deg);
+    opacity:0;
+  }
+  &-maria{
+    position:absolute;
+    width:166px;
+    height:226px;
+    top:30vh;
+    left:17vw;
+    transform: rotate(20deg);
+    opacity:0;
+  }
+  &-blockImg{
+    position:absolute;
+    width:35vw;
+    height:30vh;
+    top:20vh;
+    right:10vw;
+    background:#000;
+  }
+  &-img{
+    width:34vw;
+    height:28vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+  &-textContainer{
+    position:absolute;
+    right:10vw;
+    top:10vh;
+    width:35vw;
+
+
+  }
+  &-text{
+    color:#000;
+    font-size:25px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+
+  }
+
+}
