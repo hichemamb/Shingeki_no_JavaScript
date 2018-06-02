@@ -20,7 +20,7 @@ key.timer = setInterval(showQuotes, 7000);
 function showQuotes(){
   key.text[key.index].style.display='block';
   key.text[key.index].style.opacity='1';
-  setTimeout(function(){key.verification.style.display='block';}, 42000);
+  key.text[key.index].style.transition='all 2s ease';
   setTimeout(function(){key.text[key.index].style.display='none'; }, 6800);
   setTimeout(function(){key.text[key.index].style.opacity='0'; }, 5000);
   setTimeout(function(){key.text[key.index].style.transition='all 2s ease'; }, 5000);
@@ -29,7 +29,6 @@ function showQuotes(){
   if (key.index === text.length) {
     clearInterval(key.timer);
   }
-
 }
 
 
