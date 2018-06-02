@@ -2,40 +2,38 @@ import 'flexboxgrid';
 import './style/style.scss';
 
 
-/*var key = {
-  text : document.querySelectorAll('.storyPage-text'),
-  index : 0,
-};*/
+var key = {
+  text: document.querySelectorAll('.storyPage-text'),
+  verification: document.querySelector('.storyPage-verification'),
+  index: 0,
+  timer:'',
+};
 
-var text = document.querySelectorAll('.storyPage-text') ;
+/*var text = document.querySelectorAll('.storyPage-text') ;
+var verification = document.querySelector('.storyPage-verification');
 var index = 0;
-var timer;
+var timer;*/
 
+key.timer = setInterval(showQuotes, 7000);
 
-
-timer = setInterval(showQuotes, 6000);
 
 function showQuotes(){
-  text[index].style.display='block';
-  text[index].style.opacity='1';
-  setTimeout(function(){text[0].style.opacity='0';text[0].style.transition="all 2s ease"; }, 4000);
-  setTimeout(function(){text[1].style.opacity='0';text[1].style.transition="all 2s ease"; }, 10000);
-  setTimeout(function(){text[2].style.opacity='0';text[2].style.transition="all 2s ease"; }, 16000);
-  setTimeout(function(){text[3].style.opacity='0';text[3].style.transition="all 2s ease"; }, 22000);
-  setTimeout(function(){text[4].style.opacity='0';text[4].style.transition="all 2s ease"; }, 28000);
-  setTimeout(function(){text[0].style.display='none'; }, 5800);
-  setTimeout(function(){text[1].style.display='none'; }, 11800);
-  setTimeout(function(){text[2].style.display='none'; }, 17800);
-  setTimeout(function(){text[3].style.display='none'; }, 23800);
-  setTimeout(function(){text[4].style.display='none'; }, 29800);
-  index++;
+  key.text[key.index].style.display='block';
+  key.text[key.index].style.opacity='1';
+  setTimeout(function(){key.verification.style.display='block';}, 42000);
+  setTimeout(function(){key.text[key.index].style.display='none'; }, 6800);
+  setTimeout(function(){key.text[key.index].style.opacity='0'; }, 5000);
+  setTimeout(function(){key.text[key.index].style.transition='all 2s ease'; }, 5000);
+  setTimeout(function(){key.index++; }, 6800);
 
-  if (index === text.length) {
-    clearInterval(timer);
+  if (key.index === text.length) {
+    clearInterval(key.timer);
   }
+
 }
+
+
 
 window.addEventListener('load',function(){
   showQuotes();
-
 })
