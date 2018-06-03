@@ -1,0 +1,68 @@
+.bodyWC{
+  background-image: url("../img/fiou.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position:center;
+}
+
+.wcContainer{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  &-blockImg{
+    position:absolute;
+    width:65vw;
+    height:71vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#000;
+
+  }
+  &-img{
+    width:63vw;
+    height:68vh;
+    margin-left:1vw;
+    margin-top:1.5vh;
+
+  }
+  &-erenCaca{
+    position:absolute;
+    height:30vh;
+    width:15vw;
+    left:41vw;
+    top:30vh;
+  }
+  &-poop{
+    position:absolute;
+    height:30vh;
+    width:15vw;
+    left:25vw;
+    top:16vh;
+    opacity:0;
+  }
+  &-dialog{
+    position:absolute;
+    height:30vh;
+    width:30vw;
+    left:50vw;
+    top:5vh;
+    opacity:0;
+  }
+  &-textContainer{
+    position:absolute;
+    right:24vw;
+    top:13vh;
+    width:20vw;
+    opacity:0;
+  }
+  &-text{
+    color:#000;
+    font-size:25px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+  }
+}
