@@ -1,0 +1,309 @@
+@keyframes fadeOut {
+  0% {
+  opacity: 1;
+  }
+  100% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -2000px, 0);
+  transform: translate3d(0, -2000px, 0);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -2000px, 0);
+  transform: translate3d(0, -2000px, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+}
+
+
+
+
+body{
+  background:black;
+}
+.brokenWall{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  &-upDiv{
+    position:absolute;
+    top:0;
+    height:5vh;
+    width:100vw;
+    background:black;
+  }
+  &-downDiv{
+    position:absolute;
+    bottom:0;
+    height:5vh;
+    width:100vw;
+    background:black;
+  }
+  &-background{
+    width:100vw;
+    height:95vh;
+  }
+  &-cross1{
+    opacity:0;
+    position:absolute;
+    top:37vh;
+    right:14vw;
+  }
+  &-cross2{
+    opacity:0;
+    position:absolute;
+    top:21vh;
+    right:29vw;
+  }
+}
+
+.titanComing{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-back{
+    position:absolute;
+    top:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background:black;
+    z-index:10;
+  }
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    font-size:35px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+  }
+}
+
+.teamChocked{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-back{
+    position:absolute;
+    top:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background:black;
+    z-index:10;
+  }
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    top:20vh;
+    color:#fff;
+    font-size:35px;
+    letter-spacing: 3px;
+    left:30vh;
+    right:30vh;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+  }
+  &-buttons{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &-button{
+    font-family: 'anime_ace_2.0_bbbold';
+    color:#000;
+    font-size:20px;
+    box-shadow: 0px 0px 20px #343434;
+    border: 1px solid #fff;
+    background:#fff;
+    height:100px;
+    width:200px;
+    margin-bottom:5vh;
+  }
+  &-button:hover{
+    background:#671216;
+    color:#fff;
+  }
+}
+
+.titanEnter{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    font-size:35px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+  }
+  &-blockImg1{
+    position:absolute;
+    width:40vw;
+    height:40vh;
+    top:15vh;
+    left:10vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img1{
+    width:39vw;
+    height:38vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+  &-blockImg2{
+    position:absolute;
+    width:60vw;
+    height:55vh;
+    top:30vh;
+    left:30vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img2{
+    width:59vw;
+    height:53vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+  &-blockImg3{
+    position:absolute;
+    width:74vw;
+    height:80vh;
+    top:10vh;
+    left:13vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img3{
+    width:73vw;
+    height:78vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+  &-blockImg4{
+    position:absolute;
+    width:50vw;
+    height:60vh;
+    top:35vh;
+    right:2vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img4{
+    width:49vw;
+    height:58vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+
+}
+
+.heroAttack{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-back{
+    position:absolute;
+    top:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background:black;
+    z-index:10;
+  }
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    font-size:35px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+  }
+}
+
+.heroAttack{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-back{
+    position:absolute;
+    top:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background:black;
+    z-index:10;
+  }
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    top:20vh;
+    color:#fff;
+    font-size:35px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+  }
+  &-buttons{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &-button{
+    font-family: 'anime_ace_2.0_bbbold';
+    color:#000;
+    font-size:20px;
+    box-shadow: 0px 0px 20px #343434;
+    border: 1px solid #fff;
+    background:#fff;
+    height:50px;
+    width:200px;
+    margin-bottom:5vh;
+  }
+  &-button:hover{
+    background:#671216;
+    color:#fff;
+  }
+}

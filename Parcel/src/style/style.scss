@@ -1,5 +1,6 @@
 @import './global/reset'; /* ./global/_reset.scss */
 @import './global/variables'; /* ./global/_variables.scss */
+@import './global/fontfaces'; /* ./global/_fontfaces.scss */
 
 
 // Import Mixins
@@ -12,4 +13,5 @@
 @import './components/storyPage';
 @import './components/video';
 @import './components/erenChocked';
+@import './components/choiceA';
 @import './components/wc';
