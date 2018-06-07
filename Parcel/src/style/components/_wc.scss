@@ -49,6 +49,7 @@
     left:50vw;
     top:5vh;
     opacity:0;
+    font-family: 'anime_ace_2.0_bbbold';
   }
   &-textContainer{
     position:absolute;
@@ -64,5 +65,7 @@
     text-align:center;
     word-spacing: 5px;
     text-shadow: 2px 1px gray;
+    font-family: 'anime_ace_2.0_bbbold';
+    line-height:1.6;
   }
 }
