@@ -24,7 +24,6 @@
 }
 
 
-
 body{
   background:black;
 }
@@ -591,6 +590,192 @@ body{
   }
 }
 
+.erenDieMouth{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-background{
+    height:100vh;
+  }
+}
+
+.erenEat{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-background{
+    height:100vh;
+  }
+  &-back{
+    position:absolute;
+    top:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background:black;
+    z-index:10;
+  }
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    font-size:35px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+    line-height: 1.6;
+  }
+}
+
+.erenMorsure{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-background{
+    height:100vh;
+  }
+  &-blockImg{
+    position:absolute;
+    width:60vw;
+    height:50vh;
+    top:30vh;
+    left:30vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img{
+    width:59vw;
+    height:48vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+}
+
+.erenPunch{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-background{
+    height:100vh;
+  }
+  &-back{
+    position:absolute;
+    top:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background:black;
+    z-index:10;
+  }
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    color:#fff;
+    font-size:35px;
+    left:20vh;
+    right:20vh;
+    top:15vh;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+    line-height: 1.6;
+  }
+  &-buttons{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &-button{
+    font-family: 'anime_ace_2.0_bbbold';
+    color:#000;
+    font-size:20px;
+    box-shadow: 0px 0px 20px #343434;
+    border: 1px solid #fff;
+    background:#fff;
+    height:60px;
+    width:200px;
+    margin-bottom:5vh;
+  }
+  &-button:hover{
+    background:#671216;
+    color:#fff;
+  }
+}
+
+.erenBoucher{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-background{
+    height:100vh;
+    width:100vw;
+  }
+  &-back{
+    position:absolute;
+    top:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background:black;
+    z-index:10;
+  }
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    color:#fff;
+    font-size:35px;
+    left:20vh;
+    right:20vh;
+    top:15vh;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+    line-height: 1.6;
+  }
+  &-buttons{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &-button{
+    font-family: 'anime_ace_2.0_bbbold';
+    color:#000;
+    font-size:20px;
+    box-shadow: 0px 0px 20px #343434;
+    border: 1px solid #fff;
+    background:#fff;
+    height:60px;
+    width:200px;
+    margin-bottom:5vh;
+  }
+  &-button:hover{
+    background:#671216;
+    color:#fff;
+  }
+}
+
+
+
+
 
 
 // CHOICE B
@@ -717,6 +902,50 @@ body{
     border: 1px solid #fff;
     background:#fff;
     height:60px;
+    width:200px;
+    margin-bottom:5vh;
+  }
+  &-button:hover{
+    background:#671216;
+    color:#fff;
+  }
+}
+.erenIdea{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-img{
+    position:absolute;
+    right:10vw;
+    top:15vh;
+    height:70vh;
+    width:30vw;
+  }
+  &-text{
+    position:absolute;
+    left:10vw;
+    right:60vw;
+    top:30vh;
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    top:25vh;
+    color:#fff;
+    font-size:35px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px black;
+    line-height: 1.6;
+  }
+  &-button{
+    font-family: 'anime_ace_2.0_bbbold';
+    color:#000;
+    font-size:20px;
+    box-shadow: 0px 0px 20px #343434;
+    border: 1px solid #fff;
+    background:#fff;
+    height:100px;
     width:200px;
     margin-bottom:5vh;
   }

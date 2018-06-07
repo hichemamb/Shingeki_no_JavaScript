@@ -5,7 +5,7 @@ var key = {
   timer:'',
 };
 
-var listText = [ 
+var listText = [
  {
   "content": " Il y a plus d’un siècle est apparu sur Terre une nouvelle espèce humanoïde, les titans, prédateurs naturelles de l’homme. ",
  },
@@ -13,7 +13,7 @@ var listText = [
   "content": " Il existe entre l’homme et lui une différence de force si colossale que l’humanité a failli disparaitre en très peu de temps.",
  },
  {
-  "content": " Les survivants ont batti trois remparts en cercle concentrique, le mur Maria ,Rose et Sina.  ",
+  "content": " Les survivants ont batti trois remparts en cercle concentrique, le mur Maria, Rose et Sina.  ",
  },
  {
   "content": "Ces murs leurs ont permis de vivre près d’un siècle en paix. Jusqu’au au jour ou tout a basculé . ",
