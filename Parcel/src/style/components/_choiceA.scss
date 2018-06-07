@@ -24,7 +24,7 @@
 }
 
 
-#body{
+body{
   background:black;
 }
 .brokenWall{
@@ -930,12 +930,12 @@
     font-family: 'anime_ace_2.0_bbbold';
     position: absolute;
     top:25vh;
-    color:#000;
+    color:#fff;
     font-size:35px;
     letter-spacing: 3px;
     text-align:center;
     word-spacing: 5px;
-    text-shadow: 2px 1px gray;
+    text-shadow: 2px 1px black;
     line-height: 1.6;
   }
   &-button{

@@ -7,7 +7,7 @@
   position:relative;
   &-banner{
     position:absolute;
-    background-color:black;
+    background-color:white;
     height:75vh;
     width:20vw;
     left:10vw;
@@ -37,7 +37,7 @@
     height:30vh;
     top:30vh;
     right:10vw;
-    background:#000;
+    background:#fff;
   }
   &-img{
     width:34vw;
@@ -52,12 +52,12 @@
     width:35vw;
   }
   &-text{
-    color:#000;
+    color:#fff;
     font-size:25px;
     letter-spacing: 3px;
     text-align:center;
     word-spacing: 5px;
-    text-shadow: 2px 1px gray;
+    text-shadow: 2px 1px black;
     font-family: 'anime_ace_2.0_bbbold';
     line-height:1.6;
   }
@@ -68,11 +68,11 @@
   }
   &-buttonStyle{
     font-family: 'anime_ace_2.0_bbbold';
-    color:#ffffff;
+    color:#000;
     font-size:15px;
     box-shadow: 0px 0px 20px #343434;
-    border: 1px solid #000000;
-    background:#000000;
+    border: 1px solid #fff;
+    background:#fff;
     height:50px;
     width:17.5vw;
   }
