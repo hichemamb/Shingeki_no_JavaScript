@@ -44,6 +44,19 @@ var key = {
   miam: document.querySelector('.miam'),
   attaquer: document.querySelector('#attaquer'),
   miamBack: document.querySelector('.miam-back'),
+  erenDieMouth: document.querySelector('.erenDieMouth'),
+  erenEat: document.querySelector('.erenEat'),
+  erenEatBack: document.querySelector('.erenEat-back'),
+  erenMorsure: document.querySelector('.erenMorsure'),
+  erenMorsureBlock: document.querySelector('.erenMorsure-blockImg'),
+  erenPunch: document.querySelector('.erenPunch'),
+  erenPunchBack: document.querySelector('.erenPunch-back'),
+  erenBoucher: document.querySelector('.erenBoucher'),
+  reboucher: document.querySelector('#reboucher'),
+  erenBoucherBack: document.querySelector('.erenBoucher-back'),
+  erenIdea: document.querySelector('.erenIdea'),
+  idea: document.querySelector('#idea'),
+  fuir: document.querySelector('#fuir'),
 }
 
 
@@ -164,13 +177,18 @@ yes.addEventListener('click',function(){
   afterYesChangeSection();
 })
 
+idea.addEventListener('click',function(){
+  key.teamChocked.style.display='none';
+  key.erenIdea.style.display='block';
+})
+
 toit.addEventListener('click',function(){
   key.heroAttack.style.display='none';
   key.armyAttack.style.display='block';
   Velocity(key.armyAttackBackground, {
     translateY : [2000,-2000]
   }, {
-    duration: 3500
+    duration: 4500
   });
 
   setTimeout(function(){
@@ -293,7 +311,61 @@ setTimeout(function(){
 key.erenDieText.style.display='none';
 },8000)
 
+setTimeout(function(){
+key.erenDie.style.display='none';
+key.erenDieMouth.style.display='block';
+},12000)
+
+setTimeout(function(){
+key.erenDieMouth.style.display='none';
+key.erenEat.style.display='block';
+},13000)
+
+setTimeout(function(){
+  key.erenEatBack.style.opacity='0.7';
+  key.erenEatBack.style.transition='all 2s ease';
+},13500)
+
+setTimeout(function(){
+  key.erenEat.style.animationName='fadeOut';
+  key.erenEat.style.animationDuration='2s';
+},17500);
+setTimeout(function(){
+  key.erenMorsure.style.animationName='fadeIn';
+  key.erenMorsure.style.animationDuration='2s';
+},17800);
+setTimeout(function(){
+  key.erenEat.style.display='none';
+  key.erenMorsure.style.display='block';
+},18000);
+
+Velocity(key.erenMorsureBlock, {
+  opacity: [1,0]
+}, {
+  duration:2000,
+  delay: 20000
+});
+
+setTimeout(function(){
+  key.erenMorsure.style.animationName='fadeOut';
+  key.erenMorsure.style.animationDuration='2s';
+},22000);
+setTimeout(function(){
+  key.erenPunch.style.animationName='fadeIn';
+  key.erenPunch.style.animationDuration='2s';
+},22500);
+setTimeout(function(){
+  key.erenMorsure.style.display='none';
+  key.erenPunch.style.display='block';
+},22800);
+
+setTimeout(function(){
+  key.erenPunchBack.style.opacity='0.7';
+  key.erenPunchBack.style.transition='all 2s ease';
+},26000)
+
 })
+
 
 
 sol.addEventListener('click',function(){
@@ -333,4 +405,18 @@ attaquer.addEventListener('click',function(){
     key.miamBack.style.opacity='0.7';
     key.miamBack.style.transition='all 2s ease';
   },4000)
+})
+
+reboucher.addEventListener('click',function(){
+  key.erenPunch.style.display='none';
+  key.erenBoucher.style.display='block';
+  setTimeout(function(){
+    key.erenBoucherBack.style.opacity='0.7';
+    key.erenBoucherBack.style.transition='all 2s ease';
+  },5000)
+})
+
+fuir.addEventListener('click',function(){
+  key.titanReturn.style.display='none';
+  key.heroAttack.style.display='block';
 })
