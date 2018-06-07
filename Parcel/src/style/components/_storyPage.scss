@@ -29,6 +29,7 @@
     transform: translate(-50%, -50%);
   }
   &-text{
+    font-family: 'anime_ace_2.0_bbbold';
     color:#fff;
     font-size:35px;
     letter-spacing: 3px;
@@ -36,6 +37,7 @@
     word-spacing: 5px;
     text-shadow: 2px 1px gray;
     display:none;
+    line-height:1.6;
   }
   &-verification{
     position: absolute;
@@ -63,6 +65,7 @@
     background:#fff;
     height:50px;
     width:150px;
+    font-family: 'anime_ace_2.0_bbbold';
   }
   &-button:hover{
     color:#fff;

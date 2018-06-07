@@ -55,6 +55,8 @@
     text-align:center;
     word-spacing: 5px;
     text-shadow: 2px 1px gray;
+    font-family: 'anime_ace_2.0_bbbold';
+    line-height:1.6;
   }
   &-buttons{
     position:absolute;
@@ -62,6 +64,7 @@
     right:10vw;
   }
   &-buttonStyle{
+    font-family: 'anime_ace_2.0_bbbold';
     color:#ffffff;
     font-size:15px;
     box-shadow: 0px 0px 20px #343434;

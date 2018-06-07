@@ -32,6 +32,18 @@ var key = {
   runHeroBlock1: document.querySelector('.runHero-blockImg1'),
   runHeroBlock2: document.querySelector('.runHero-blockImg2'),
   runHeroBack: document.querySelector('.runHero-back'),
+  erenAttack: document.querySelector('.erenAttack'),
+  erenJambe: document.querySelector('.erenJambe'),
+  erenDie: document.querySelector('.erenDie'),
+  erenDieBlock1: document.querySelector('.erenDie-blockImg1'),
+  erenDieBlock2: document.querySelector('.erenDie-blockImg2'),
+  erenDieText: document.querySelector('.erenDie-text'),
+  titanReturn: document.querySelector('.titanReturn'),
+  titanReturnBlock: document.querySelector('.titanReturn-blockImg'),
+  titanReturnBack: document.querySelector('.titanReturn-back'),
+  miam: document.querySelector('.miam'),
+  attaquer: document.querySelector('#attaquer'),
+  miamBack: document.querySelector('.miam-back'),
 }
 
 
@@ -100,7 +112,7 @@ letterSpacing: 5
 
   Velocity(key.block1, {
     opacity: [1,0],
-    rotateZ:-30
+    rotateZ:-10
   }, {
     duration:2000,
     delay: 2500
@@ -108,7 +120,7 @@ letterSpacing: 5
 
   Velocity(key.block2, {
     opacity: [1,0],
-    rotateZ:20
+    rotateZ:10
   }, {
     duration:2000,
     delay: 5500
@@ -116,7 +128,7 @@ letterSpacing: 5
 
   Velocity(key.block3, {
     opacity: [1,0],
-    rotateZ:-25
+    rotateZ:-10
   }, {
     duration:2000,
     delay: 8500
@@ -240,10 +252,85 @@ help.addEventListener('click',function(){
   },14000)
 })
 
+solo.addEventListener('click',function(){
+  key.surpriseHero.style.display='none';
+  key.erenAttack.style.display='block';
+  setTimeout(function(){
+    key.erenAttack.style.display='none';
+    key.erenJambe.style.display='block';
+  },1000)
+  setTimeout(function(){
+    key.erenJambe.style.display='none';
+    key.erenDie.style.display='block';
+  },2000)
 
+
+  Velocity(key.erenDieBlock1, {
+    opacity: [1,0]
+  }, {
+    duration:2000,
+    delay: 4000
+  });
+
+
+  Velocity(key.erenDieBlock2, {
+    opacity: [1,0]
+  }, {
+    duration:2000,
+    delay: 9000
+  });
+
+  var erenText = new Typewriter(key.erenDieText, {
+    cursor: ''
+  });
+
+  setTimeout(function(){
+  erenText.typeString('Tiens bon Eren !')
+  .start();
+},5000)
+
+setTimeout(function(){
+key.erenDieText.style.display='none';
+},8000)
+
+})
 
 
 sol.addEventListener('click',function(){
+    key.erenAttack.style.display='none';
+    key.erenDie.style.display='none';
     key.heroAttack.style.display='none';
     key.titanSol.style.display='block';
+    setTimeout(function(){
+      key.titanSol.style.animationName='fadeOut';
+      key.titanSol.style.animationDuration='2s';
+    },3000);
+    setTimeout(function(){
+      key.titanReturn.style.animationName='fadeIn';
+      key.titanReturn.style.animationDuration='2s';
+    },3800);
+    setTimeout(function(){
+      key.titanSol.style.display='none';
+      key.titanReturn.style.display='block';
+    },4000);
+    Velocity(key.titanReturnBlock, {
+      opacity: [1,0]
+    }, {
+      duration:2000,
+      delay: 6000
+    });
+    setTimeout(function(){
+      key.titanReturnBack.style.opacity='0.7';
+      key.titanReturnBack.style.transition='all 2s ease';
+    },9000)
+
+})
+
+attaquer.addEventListener('click',function(){
+  key.titanReturn.style.display='none';
+  key.miam.style.display='block';
+  setTimeout(function(){
+    key.miamBack.style.opacity='0.7';
+    key.miamBack.style.transition='all 2s ease';
+  },4000)
 })
