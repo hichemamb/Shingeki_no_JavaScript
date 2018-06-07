@@ -25,7 +25,6 @@
 
 
 
-
 body{
   background:black;
 }
@@ -306,4 +305,215 @@ body{
     background:#671216;
     color:#fff;
   }
+}
+
+.armyAttack{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-background{
+  width:100vw;
+  height:95vh;
+  }
+}
+
+.surpriseHero{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-blockImg1{
+    position:absolute;
+    width:80vw;
+    height:70vh;
+    top:10vh;
+    left:2vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img1{
+    width:79vw;
+    height:68vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+  &-blockImg2{
+    position:absolute;
+    width:50vw;
+    height:75vh;
+    top:20vh;
+    right:5vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img2{
+    width:49vw;
+    height:73vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+  &-back{
+    position:absolute;
+    top:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background:black;
+    z-index:10;
+  }
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    top:20vh;
+    color:#fff;
+    font-size:35px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+  }
+  &-buttons{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &-button{
+    font-family: 'anime_ace_2.0_bbbold';
+    color:#000;
+    font-size:20px;
+    box-shadow: 0px 0px 20px #343434;
+    border: 1px solid #fff;
+    background:#fff;
+    height:60px;
+    width:200px;
+    margin-bottom:5vh;
+  }
+  &-button:hover{
+    background:#671216;
+    color:#fff;
+  }
+}
+
+.heroSoldat{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-background{
+    height:100vh;
+  }
+  &-blockImg1{
+    position:absolute;
+    width:96vw;
+    height:80vh;
+    top:10vh;
+    left:2vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img1{
+    width:95vw;
+    height:78vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+}
+
+.runHero{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
+  &-background{
+    height:100vh;
+  }
+  &-blockImg1{
+    position:absolute;
+    width:96vw;
+    height:80vh;
+    top:10vh;
+    left:2vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img1{
+    width:95vw;
+    height:78vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+  &-blockImg2{
+    position:absolute;
+    width:96vw;
+    height:80vh;
+    top:10vh;
+    left:2vw;
+    background:#fff;
+    opacity:0;
+  }
+  &-Img2{
+    width:95vw;
+    height:78vh;
+    margin-top:1vh;
+    margin-left:0.5vw;
+  }
+  &-back{
+    position:absolute;
+    top:0;
+    opacity:0;
+    width:100vw;
+    height:100vh;
+    background:black;
+    z-index:10;
+  }
+  &-text{
+    font-family: 'anime_ace_2.0_bbbold';
+    position: absolute;
+    top:20vh;
+    color:#fff;
+    font-size:35px;
+    letter-spacing: 3px;
+    text-align:center;
+    word-spacing: 5px;
+    text-shadow: 2px 1px gray;
+  }
+  &-buttons{
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  &-button{
+    font-family: 'anime_ace_2.0_bbbold';
+    color:#000;
+    font-size:20px;
+    box-shadow: 0px 0px 20px #343434;
+    border: 1px solid #fff;
+    background:#fff;
+    height:60px;
+    width:200px;
+    margin-bottom:5vh;
+  }
+  &-button:hover{
+    background:#671216;
+    color:#fff;
+  }
+}
+
+
+
+// CHOICE B
+.titanSol{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:none;
 }

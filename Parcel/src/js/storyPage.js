@@ -5,7 +5,7 @@ var key = {
   timer:'',
 };
 
-var listText = [
+var listText = [ 
  {
   "content": " Il y a plus d’un siècle est apparu sur Terre une nouvelle espèce humanoïde, les titans, prédateurs naturelles de l’homme. ",
  },

@@ -17,6 +17,21 @@ var key = {
   heroAttackBack: document.querySelector('.heroAttack-back'),
   toit: document.querySelector('#toit'),
   sol: document.querySelector('#sol'),
+  titanSol: document.querySelector('.titanSol'),
+  armyAttack: document.querySelector('.armyAttack'),
+  armyAttackBackground: document.querySelector('.armyAttack-background'),
+  surpriseHero: document.querySelector('.surpriseHero'),
+  surpriseBlock1: document.querySelector('.surpriseHero-blockImg1'),
+  surpriseBlock2: document.querySelector('.surpriseHero-blockImg2'),
+  surpriseHeroBack: document.querySelector('.surpriseHero-back'),
+  solo: document.querySelector('#solo'),
+  help: document.querySelector('#help'),
+  heroSoldat: document.querySelector('.heroSoldat'),
+  heroSoldatBlock1: document.querySelector('.heroSoldat-blockImg1'),
+  runHero: document.querySelector('.runHero'),
+  runHeroBlock1: document.querySelector('.runHero-blockImg1'),
+  runHeroBlock2: document.querySelector('.runHero-blockImg2'),
+  runHeroBack: document.querySelector('.runHero-back'),
 }
 
 
@@ -138,9 +153,97 @@ yes.addEventListener('click',function(){
 })
 
 toit.addEventListener('click',function(){
-  
+  key.heroAttack.style.display='none';
+  key.armyAttack.style.display='block';
+  Velocity(key.armyAttackBackground, {
+    translateY : [2000,-2000]
+  }, {
+    duration: 3500
+  });
+
+  setTimeout(function(){
+    key.armyAttack.style.animationName='fadeOut';
+    key.armyAttack.style.animationDuration='2s';
+  },3500);
+  setTimeout(function(){
+    key.surpriseHero.style.animationName='fadeIn';
+    key.surpriseHero.style.animationDuration='2s';
+  },3800);
+  setTimeout(function(){
+    key.armyAttack.style.display='none';
+    key.surpriseHero.style.display='block';
+  },4000);
+
+  Velocity(key.surpriseBlock1, {
+    opacity: [1,0]
+  }, {
+    duration:2000,
+    delay: 5000
+  });
+
+  Velocity(key.surpriseBlock2, {
+    opacity: [1,0]
+  }, {
+    duration:2000,
+    delay: 7000
+  });
+
+  Velocity(key.surpriseHeroBack, {
+    opacity: [0.7,0]
+  }, {
+    duration:2000,
+    delay: 9000
+  });
+
 })
 
-sol.addEventListener('click',function(){
+help.addEventListener('click',function(){
+  key.surpriseHero.style.display='none';
+  key.heroSoldat.style.display='block';
 
+  Velocity(key.heroSoldatBlock1, {
+    opacity: [1,0]
+  }, {
+    duration:2000,
+    delay: 2000
+  });
+
+  setTimeout(function(){
+    key.heroSoldat.style.animationName='fadeOut';
+    key.heroSoldat.style.animationDuration='2s';
+  },4000);
+  setTimeout(function(){
+    key.runHero.style.animationName='fadeIn';
+    key.runHero.style.animationDuration='2s';
+  },4800);
+  setTimeout(function(){
+    key.heroSoldat.style.display='none';
+    key.runHero.style.display='block';
+  },5000);
+
+  Velocity(key.runHeroBlock1, {
+    opacity: [1,0]
+  }, {
+    duration:2000,
+    delay: 8000
+  });
+
+  Velocity(key.runHeroBlock2, {
+    opacity: [1,0]
+  }, {
+    duration:2000,
+    delay: 11000
+  });
+  setTimeout(function(){
+    key.runHeroBack.style.opacity='0.7';
+    key.runHeroBack.style.transition='all 2s ease';
+  },14000)
+})
+
+
+
+
+sol.addEventListener('click',function(){
+    key.heroAttack.style.display='none';
+    key.titanSol.style.display='block';
 })
