@@ -1,4 +1,4 @@
-# Shingeki No JavasScript
+# Shingeki No JavaScript
 
 Project Members :
 
